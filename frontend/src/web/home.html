@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <script defer src="./js/face-api.min.js"></script>
+    <script defer src="./js/home.js"></script>
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <div class="button-register">
+        <button id="register" onclick="location.href='./register'">Register</button>
+    </div>
+    <div class="container">
+        <div class="video-container">
+            <video id="webCam" autoplay playsinline width="400" height="300"></video>
+            <canvas id="overlayCanvas" style="position: absolute; top: 0; left: 0;"></canvas>
+        </div>
+    </div>
+    <div id="notification" class="notification"></div>
+</body>
+
+</html>

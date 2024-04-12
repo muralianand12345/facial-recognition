@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/capture_guest.css">
+    <script defer src="./js/capture_guest.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video id="webCam" autoplay playsinline width="400" height="300"></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+        <div class="loader">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+            <div class="bar5"></div>
+            <div class="bar6"></div>
+        </div>
+        <div class="input-container">
+            <div class="email-verify">
+                <div class="email-send">
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <button id="verify" onclick="sendOTP()">Send OTP</button>
+                </div>
+                <div class="email-otp">
+                    <input type="text" id="otp" placeholder="Enter OTP">
+                    <button id="submit" onclick="startCapture()">Start</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="notification" class="notification"></div>
+</body>
+
+</html>

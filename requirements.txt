@@ -1,0 +1,7 @@
+dlib
+pandas
+numpy
+opencv-python
+flask
+flask_cors
+pillow

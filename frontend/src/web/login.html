@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/login.css">
+    <script defer src="./js/login.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ADMIN LOGIN</h1>
+        <div class="input-group">
+            <label for="empId"><b>Employee ID</b></label>
+            <input type="text" placeholder="Enter Employee ID" id="empId" name="empId" required>
+        </div>
+        <div class="input-group">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="password" name="psw" required>
+        </div>
+        <button type="submit" onclick="Login()">Login</button>
+    </div>
+    <div id="notification" class="notification"></div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="./js/capture_emp.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <link rel="stylesheet" href="./css/capture_emp.css">
+</head>
+
+<body>
+    <div class="button-admin-page">
+        <button id="admin-page" onclick="location.href='./admin'">Admin</button>
+    </div>
+    <div class="container">
+        <div class="video-container">
+            <video id="webCam" autoplay playsinline width="400" height="300"></video>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+        <div class="loader">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+            <div class="bar5"></div>
+            <div class="bar6"></div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <a onclick="takeAPicture()" download>CAPTURE</a>
+            <a onclick="location.href='./guest'" download>Enter As Guest</a>
+        </div>
+    </div>
+    <div id="notification" class="notification"></div>
+</body>
+
+</html>
